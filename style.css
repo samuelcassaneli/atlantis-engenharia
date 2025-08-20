@@ -73,9 +73,8 @@ header.scrolled .navbar {
     text-decoration: none;
 }
 
-.logo img {
-    height: 40px;
-}
+/* A REGRA ANTIGA PARA O IMG DO LOGO FOI REMOVIDA */
+/* .logo img { height: 40px; } */
 
 .nav-links {
     display: flex;
@@ -154,6 +153,12 @@ header.scrolled .navbar {
     padding: 0 5%;
     position: relative;
     color: var(--white);
+}
+
+
+.hero-logo {
+    height: 15rem;
+    margin-bottom: 2rem;
 }
 
 .hero-content h1 {
