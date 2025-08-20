@@ -14,6 +14,9 @@
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
     
@@ -34,6 +37,8 @@
             <ul class="nav-links">
                 <li><a href="#sobre">Sobre Nós</a></li>
                 <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#diretoria">Diretoria</a></li>
                 <li><a href="#atuacao">Atuação</a></li>
                 <li><a href="#contato" class="cta-button-nav">Contato</a></li>
             </ul>
@@ -79,69 +84,61 @@
         <section id="servicos" class="content-section animate-on-scroll">
             <h2>Nossas Principais Soluções</h2>
             <div class="services-grid">
-                <!-- Service Cards -->
-                <div class="card">
-                    <div class="card-content">
-                        <i class="fas fa-industry"></i>
-                        <h3>Caldeiraria e Estruturas Metálicas</h3>
-                        <p>Fabricação e montagem de estruturas pesadas para a indústria.</p>
-                    </div>
+                <!-- Service Cards (Seus cards existentes) -->
+                <div class="card"><div class="card-content"><i class="fas fa-industry"></i><h3>Caldeiraria e Estruturas Metálicas</h3><p>Fabricação e montagem de estruturas pesadas para a indústria.</p></div></div>
+                <div class="card"><div class="card-content"><i class="fas fa-bolt"></i><h3>Distribuição de Energia</h3><p>Projetos e instalação de equipamentos para distribuição energética.</p></div></div>
+                <div class="card"><div class="card-content"><i class="fas fa-drafting-compass"></i><h3>Análise Crítica de Projetos</h3><p>Engenharia de proprietário para garantir a viabilidade e qualidade dos projetos.</p></div></div>
+                <div class="card"><div class="card-content"><i class="fas fa-hard-hat"></i><h3>Gestão de Segurança</h3><p>Implementação de normas e procedimentos para segurança do trabalho.</p></div></div>
+                <div class="card"><div class="card-content"><i class="fas fa-map-marked-alt"></i><h3>Topografia e Geoprocessamento</h3><p>Levantamentos precisos para planejamento e execução de obras.</p></div></div>
+                <div class="card"><div class="card-content"><i class="fas fa-truck-loading"></i><h3>Plano de Rigging e Logística</h3><p>Planejamento de içamento, movimentação de cargas e aluguel de equipamentos.</p></div></div>
+                <div class="card"><div class="card-content"><i class="fas fa-building"></i><h3>Projeto e Reforço Estrutural</h3><p>Soluções em concreto armado e pisos industriais de alta resistência.</p></div></div>
+                <div class="card"><div class="card-content"><i class="fas fa-cogs"></i><h3>Montagem e Usinagem</h3><p>Instalação de tubulações, infraestrutura hidráulica e produção de peças técnicas.</p></div></div>
+                <div class="card"><div class="card-content"><i class="fas fa-users"></i><h3>Terceirização Profissional</h3><p>Alocação de equipes multidisciplinares especializadas para seu projeto.</p></div></div>
+            </div>
+        </section>
+
+        <!-- Projects Carousel Section -->
+        <section id="projetos" class="content-section animate-on-scroll">
+            <h2>Nossos Projetos em Destaque</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="https://i.imgur.com/n14aT6n.jpg" alt="Operação Portuária Noturna"></div>
+                    <div class="swiper-slide"><img src="https://i.imgur.com/7b3T7Cg.jpg" alt="Construção de Edifício em Estrutura Metálica"></div>
+                    <div class="swiper-slide"><img src="https://i.imgur.com/6EaWd0E.jpg" alt="Estruturas Metálicas e Pórticos"></div>
+                    <div class="swiper-slide"><img src="https://i.imgur.com/3cW4F8m.jpg" alt="Complexo ETE - Estação de Tratamento"></div>
+                    <div class="swiper-slide"><img src="https://i.imgur.com/O6L5m9J.jpg" alt="Operação de Desmontagem de Passarela"></div>
+                    <div class="swiper-slide"><img src="https://i.imgur.com/o03gXp3.jpg" alt="Tubulações Industriais à noite"></div>
                 </div>
-                <div class="card">
-                    <div class="card-content">
-                        <i class="fas fa-bolt"></i>
-                        <h3>Distribuição de Energia</h3>
-                        <p>Projetos e instalação de equipamentos para distribuição energética.</p>
-                    </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <!-- Directors Section -->
+        <section id="diretoria" class="content-section animate-on-scroll">
+            <h2>Nossa Diretoria</h2>
+            <div class="directors-grid">
+                <div class="director-card">
+                    <img src="https://placehold.co/200x200/2c3e50/c5a059?text=A" alt="Foto de André Oliveira">
+                    <h3>André Oliveira</h3>
+                    <p>Sócio Fundador</p>
                 </div>
-                <div class="card">
-                    <div class="card-content">
-                        <i class="fas fa-drafting-compass"></i>
-                        <h3>Análise Crítica de Projetos</h3>
-                        <p>Engenharia de proprietário para garantir a viabilidade e qualidade dos projetos.</p>
-                    </div>
+                <div class="director-card">
+                    <img src="https://placehold.co/200x200/2c3e50/c5a059?text=P" alt="Foto de Paulo Ávila">
+                    <h3>Paulo Ávila</h3>
+                    <p>Sócio Fundador</p>
                 </div>
-                <div class="card">
-                    <div class="card-content">
-                        <i class="fas fa-hard-hat"></i>
-                        <h3>Gestão de Segurança</h3>
-                        <p>Implementação de normas e procedimentos para segurança do trabalho.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <i class="fas fa-map-marked-alt"></i>
-                        <h3>Topografia e Geoprocessamento</h3>
-                        <p>Levantamentos precisos para planejamento e execução de obras.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <i class="fas fa-truck-loading"></i>
-                        <h3>Plano de Rigging e Logística</h3>
-                        <p>Planejamento de içamento, movimentação de cargas e aluguel de equipamentos.</p>
-                    </div>
-                </div>
-                 <div class="card">
-                    <div class="card-content">
-                        <i class="fas fa-building"></i>
-                        <h3>Projeto e Reforço Estrutural</h3>
-                        <p>Soluções em concreto armado e pisos industriais de alta resistência.</p>
-                    </div>
-                </div>
-                 <div class="card">
-                    <div class="card-content">
-                        <i class="fas fa-cogs"></i>
-                        <h3>Montagem e Usinagem</h3>
-                        <p>Instalação de tubulações, infraestrutura hidráulica e produção de peças técnicas.</p>
-                    </div>
-                </div>
-                 <div class="card">
-                    <div class="card-content">
-                        <i class="fas fa-users"></i>
-                        <h3>Terceirização Profissional</h3>
-                        <p>Alocação de equipes multidisciplinares especializadas para seu projeto.</p>
-                    </div>
+                <div class="director-card">
+                    <img src="https://placehold.co/200x200/2c3e50/c5a059?text=R" alt="Foto de Ricardo Viana">
+                    <h3>Ricardo Viana</h3>
+                    <p>Sócio Fundador</p>
                 </div>
             </div>
         </section>
@@ -159,13 +156,13 @@
             <p>Nossa equipe está pronta para entender suas necessidades e propor a melhor solução. Entre em contato conosco.</p>
             <div class="contact-buttons">
                 <a href="mailto:comercial@atlantisengenharia.com.br?subject=Contato%20via%20Website%20-%20Solicitação%20de%20Orçamento" class="contact-btn email">
-                    <i class="fas fa-envelope"></i> Enviar um E-mail
+                    <i class="fas fa-envelope"></i> E-mail
                 </a>
                 <a href="https://wa.me/5524993301435" target="_blank" class="contact-btn whatsapp">
-                    <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+                    <i class="fab fa-whatsapp"></i> WhatsApp
                 </a>
                 <a href="https://www.instagram.com/atlantis_engenharia/" target="_blank" class="contact-btn instagram">
-                    <i class="fab fa-instagram"></i> Siga-nos no Instagram
+                    <i class="fab fa-instagram"></i> Instagram
                 </a>
             </div>
         </section>
@@ -179,6 +176,9 @@
             <p>© 2025 FOC Smart. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="script.js"></script>

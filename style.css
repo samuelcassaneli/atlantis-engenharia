@@ -350,6 +350,87 @@ header.scrolled .navbar {
     color: var(--text-color);
 }
 
+/* --- Projects Carousel Section --- */
+#projetos {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 320px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Customizing swiper colors */
+:root {
+    --swiper-navigation-color: var(--primary-gold);
+    --swiper-pagination-color: var(--primary-gold);
+}
+
+
+/* --- Directors Section --- */
+.directors-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.director-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    width: 300px;
+    border-top: 3px solid var(--primary-gold);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.director-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.director-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-gold);
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.director-card h3 {
+    font-family: var(--font-secondary);
+    font-size: 1.4rem;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.director-card p {
+    color: var(--primary-gold);
+    font-weight: 600;
+}
+
 /* --- National Coverage Section --- */
 #atuacao {
     text-align: center;
@@ -480,4 +561,9 @@ footer p {
     .differentiators { grid-template-columns: 1fr; }
     .contact-buttons { flex-direction: column; align-items: center; }
     .contact-btn { width: 80%; justify-content: center; }
+
+    .swiper-slide {
+        width: 280px;
+        height: 280px;
+    }
 }
